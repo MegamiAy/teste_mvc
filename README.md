@@ -183,7 +183,7 @@
          <?php
          class Controller {                                                      // setar a classe Controler 
          
-         	protected $db;                                             // criação de uma propriedade protegida chamada $db, se refere a uma conexão com o banco de dados.                                                     
+         	protected $db;                                             // criação de uma propriedade protegida chamada $db, se refere a uma conexão com o banco de dados                                                     
          	public function __construct() { '                          // essa função "construtora" recebe a configuração global
          		global $config;
          	}
