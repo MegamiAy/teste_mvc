@@ -55,15 +55,10 @@
 
 * para afunilar tudo que o usuário acessa para o index, é necessário o .htacess
 
-`RewriteEngine On` 		-> ativa o rewrite
-
-`RewriteCond %{REQUEST_FILENAME} !-f`	-> condiciona: se acessar o nome de um arquivo real, ele vai ser acessado
-
-`RewriteCond %{REQUEST_FILENAME} !-d`	-> condiciona: se acessar o nome de um diretório real, ele vai ser acessado
-
-`RewriteRule ^(.*)$ /mvc/index.php/$1 [L]`	-> caso não seja acessado nada
-
-`RewriteRule ^(.*)$ /mvc/index.php/$1 [L]`	-> se a condição for falsa, ele ira redirecionar para o index
+`RewriteEngine On` 		                        -> ativa o rewrite
+`RewriteCond %{REQUEST_FILENAME} !-f`	        -> condiciona: se acessar o nome de um arquivo real, ele vai ser acessado
+`RewriteCond %{REQUEST_FILENAME} !-d`	        -> condiciona: se acessar o nome de um diretório real, ele vai ser acessado
+`RewriteRule ^(.*)$ /mvc/index.php/$1 [L]`	    -> caso não seja acessado nada, se a condição for falsa, ele ira redirecionar para o index
 
 #
 
